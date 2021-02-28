@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" parallel="tests" thread-count="1">
+    <!-- 百度测试 -->
+    <test name="Login Api" preserve-order="true">
+        <classes>
+            <class name="com.hupofire.testcase.LoginApi_Testcase">
+            </class>
+        </classes>
+    </test>
+
+</suite>
