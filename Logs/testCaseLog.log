@@ -1,86 +1,339 @@
-2021-02-28 20:32:09.455 [INFO ] F - Derrick
-2021-02-28 21:39:34.485 [INFO ] F - Derrick
-2021-02-28 21:39:45.715 [INFO ] F - login api,200
-2021-02-28 21:39:47.374 [INFO ] F - login api,401
-2021-02-28 21:39:48.897 [INFO ] F - login api,401
-2021-02-28 21:39:50.408 [INFO ] F - login api,401
-2021-02-28 21:39:51.854 [INFO ] F - login api,401
-2021-02-28 21:39:53.286 [INFO ] F - login api,401
-2021-02-28 21:39:54.789 [INFO ] F - login api,401
-2021-02-28 21:54:02.072 [INFO ] F - Derrick
-2021-02-28 21:54:14.396 [INFO ] F - login api,200
-2021-02-28 21:54:16.021 [INFO ] F - login api,401
-2021-02-28 21:54:17.624 [INFO ] F - login api,401
-2021-02-28 21:54:19.241 [INFO ] F - login api,401
-2021-02-28 21:54:20.771 [INFO ] F - login api,401
-2021-02-28 21:54:23.776 [INFO ] F - login api,401
-2021-02-28 22:02:57.806 [INFO ] F - Derrick
-2021-02-28 22:03:09.704 [INFO ] F - login api,200
-2021-02-28 22:03:11.364 [INFO ] F - login api,401
-2021-02-28 22:03:12.945 [INFO ] F - login api,401
-2021-02-28 22:03:14.511 [INFO ] F - login api,401
-2021-02-28 22:03:16.132 [INFO ] F - login api,401
-2021-02-28 22:03:19.330 [INFO ] F - login api,401
-2021-02-28 22:13:01.274 [INFO ] F - Derrick
-2021-02-28 22:13:14.452 [INFO ] F - login api,200
-2021-02-28 22:13:16.207 [INFO ] F - login api,401
-2021-02-28 22:13:18.036 [INFO ] F - login api,401
-2021-02-28 22:13:19.765 [INFO ] F - login api,401
-2021-02-28 22:13:21.502 [INFO ] F - login api,401
-2021-02-28 22:13:24.881 [INFO ] F - login api,401
-2021-02-28 22:19:49.059 [INFO ] F - Derrick
-2021-02-28 22:20:01.513 [INFO ] F - login api,200
-2021-02-28 22:20:03.293 [INFO ] F - login api,401
-2021-02-28 22:20:05.044 [INFO ] F - login api,401
-2021-02-28 22:20:06.848 [INFO ] F - login api,401
-2021-02-28 22:20:08.521 [INFO ] F - login api,401
-2021-02-28 22:20:11.773 [INFO ] F - login api,401
-2021-02-28 22:23:40.955 [INFO ] F - Derrick
-2021-02-28 22:23:53.543 [INFO ] F - login api,200
-2021-02-28 22:23:55.352 [INFO ] F - login api,401
-2021-02-28 22:23:57.150 [INFO ] F - login api,401
-2021-02-28 22:23:58.871 [INFO ] F - login api,401
-2021-02-28 22:24:00.593 [INFO ] F - login api,401
-2021-02-28 22:24:04.070 [INFO ] F - login api,401
-2021-02-28 22:27:25.219 [INFO ] F - Derrick
-2021-02-28 22:27:38.647 [INFO ] F - login api,200
-2021-02-28 22:27:40.500 [INFO ] F - login api,401
-2021-02-28 22:27:42.287 [INFO ] F - login api,401
-2021-02-28 22:27:44.072 [INFO ] F - login api,401
-2021-02-28 22:27:46.022 [INFO ] F - login api,401
-2021-02-28 22:27:49.630 [INFO ] F - login api,401
-2021-02-28 22:29:39.429 [INFO ] F - Derrick
-2021-02-28 22:29:53.004 [INFO ] F - login api,200
-2021-02-28 22:29:54.905 [INFO ] F - login api,401
-2021-02-28 22:29:56.769 [INFO ] F - login api,401
-2021-02-28 22:29:58.581 [INFO ] F - login api,401
-2021-02-28 22:30:00.371 [INFO ] F - login api,401
-2021-02-28 22:30:03.995 [INFO ] F - login api,401
-2021-02-28 22:33:14.632 [INFO ] F - Derrick
-2021-02-28 22:33:27.952 [INFO ] F - login api,200
-2021-02-28 22:33:29.887 [INFO ] F - login api,401
-2021-02-28 22:33:31.789 [INFO ] F - login api,401
-2021-02-28 22:33:33.712 [INFO ] F - login api,401
-2021-02-28 22:33:35.669 [INFO ] F - login api,401
-2021-02-28 22:33:39.458 [INFO ] F - login api,401
-2021-02-28 22:34:46.812 [INFO ] F - Derrick
-2021-02-28 22:34:59.715 [INFO ] F - login api,200
-2021-02-28 22:35:01.638 [INFO ] F - login api,401
-2021-02-28 22:35:03.602 [INFO ] F - login api,401
-2021-02-28 22:35:05.492 [INFO ] F - login api,401
-2021-02-28 22:35:07.466 [INFO ] F - login api,401
-2021-02-28 22:35:11.562 [INFO ] F - login api,401
-2021-02-28 22:38:09.505 [INFO ] F - Derrick
-2021-02-28 22:38:22.829 [INFO ] F - login api,200
-2021-02-28 22:38:24.909 [INFO ] F - login api,401
-2021-02-28 22:38:26.862 [INFO ] F - login api,401
-2021-02-28 22:38:28.768 [INFO ] F - login api,401
-2021-02-28 22:38:30.642 [INFO ] F - login api,401
-2021-02-28 22:38:34.415 [INFO ] F - login api,401
-2021-02-28 22:41:15.839 [INFO ] F - Derrick
-2021-02-28 22:41:29.070 [INFO ] F - login api,200
-2021-02-28 22:41:31.055 [INFO ] F - login api,401
-2021-02-28 22:41:33.029 [INFO ] F - login api,401
-2021-02-28 22:41:34.973 [INFO ] F - login api,401
-2021-02-28 22:41:36.933 [INFO ] F - login api,401
-2021-02-28 22:41:40.852 [INFO ] F - login api,401
+2021-03-01 20:11:41.398 [INFO ] F - 2021-03-01 20:11:41,heartTester,login api,200,v1
+2021-03-01 20:11:43.180 [INFO ] F - 2021-03-01 20:11:43,heartTester,login api,401,v1
+2021-03-01 20:11:44.994 [INFO ] F - 2021-03-01 20:11:44,heartTester,login api,401,v1
+2021-03-01 20:11:46.689 [INFO ] F - 2021-03-01 20:11:46,heartTester,login api,401,v1
+2021-03-01 20:11:48.356 [INFO ] F - 2021-03-01 20:11:48,heartTester,login api,401,v1
+2021-03-01 20:11:50.050 [INFO ] F - 2021-03-01 20:11:50,heartTester,login api,401,v1
+2021-03-01 20:11:51.750 [INFO ] F - 2021-03-01 20:11:51,heartTester,login api,401,v1
+2021-03-01 20:11:54.119 [INFO ] F - 2021-03-01 20:11:54,heartTester,menu api,400,v1
+2021-03-01 20:11:56.383 [INFO ] F - 2021-03-01 20:11:56,heartTester,menu api,400,v1
+2021-03-01 20:11:58.601 [INFO ] F - 2021-03-01 20:11:58,heartTester,menu api,400,v1
+2021-03-01 20:12:00.847 [INFO ] F - 2021-03-01 20:12:00,heartTester,menu api,400,v1
+2021-03-01 20:12:03.072 [INFO ] F - 2021-03-01 20:12:03,heartTester,menu api,400,v1
+2021-03-01 20:12:05.376 [INFO ] F - 2021-03-01 20:12:05,heartTester,menu api,401,v1
+2021-03-01 20:12:07.689 [INFO ] F - 2021-03-01 20:12:07,heartTester,menu api,401,v1
+2021-03-01 20:12:10.011 [INFO ] F - 2021-03-01 20:12:10,heartTester,menu api,401,v1
+2021-03-01 20:12:11.900 [INFO ] F - 2021-03-01 20:12:11,heartTester,menu api,200,v1
+2021-03-01 20:12:14.078 [INFO ] F - 2021-03-01 20:12:14,heartTester,menu api,401,v1
+2021-03-01 20:12:16.226 [INFO ] F - 2021-03-01 20:12:16,heartTester,menu api,401,v1
+2021-03-01 20:12:16.557 [INFO ] com.hupofire.handler.LoginApi_Handler - CaseID: null, CaseName: 使用正确的账号，正确的密码，可以正常登录成功，且接口返回的实际结果都正确, msg_Exp: login success, msg_Act: login success, StatusCode: 200, TestResult: OK, FailHint: 
+2021-03-01 20:12:16.558 [INFO ] com.hupofire.handler.LoginApi_Handler - ==================================================================
+2021-03-01 20:12:16.870 [INFO ] com.hupofire.handler.LoginApi_Handler - CaseID: null, CaseName: 使用空值的账号，空值的密码，无法正常登录成功，且接口返回的实际结果都正确, msg_Exp: login fail, msg_Act: login fail, StatusCode: 401, TestResult: OK, FailHint: {
+  "code": "401", 
+  "message": "login fail"
+}
+2021-03-01 20:12:16.870 [INFO ] com.hupofire.handler.LoginApi_Handler - ==================================================================
+2021-03-01 20:12:17.184 [INFO ] com.hupofire.handler.LoginApi_Handler - CaseID: null, CaseName: 使用空值的账号，正确的密码，无法正常登录成功，且接口返回的实际结果都正确, msg_Exp: login fail, msg_Act: login fail, StatusCode: 401, TestResult: OK, FailHint: {
+  "code": "401", 
+  "message": "login fail"
+}
+2021-03-01 20:12:17.184 [INFO ] com.hupofire.handler.LoginApi_Handler - ==================================================================
+2021-03-01 20:12:17.511 [INFO ] com.hupofire.handler.LoginApi_Handler - CaseID: null, CaseName: 使用正确的账号，空值的密码，无法正常登录成功，且接口返回的实际结果都正确, msg_Exp: login fail, msg_Act: login fail, StatusCode: 401, TestResult: OK, FailHint: {
+  "code": "401", 
+  "message": "login fail"
+}
+2021-03-01 20:12:17.512 [INFO ] com.hupofire.handler.LoginApi_Handler - ==================================================================
+2021-03-01 20:12:17.826 [INFO ] com.hupofire.handler.LoginApi_Handler - CaseID: null, CaseName: 使用错误的账号，错误的密码，无法正常登录成功，且接口返回的实际结果都正确, msg_Exp: login fail, msg_Act: login fail, StatusCode: 401, TestResult: OK, FailHint: {
+  "code": "401", 
+  "message": "login fail"
+}
+2021-03-01 20:12:17.826 [INFO ] com.hupofire.handler.LoginApi_Handler - ==================================================================
+2021-03-01 20:12:18.140 [INFO ] com.hupofire.handler.LoginApi_Handler - CaseID: null, CaseName: 使用错误的账号，正确的密码，无法正常登录成功，且接口返回的实际结果都正确, msg_Exp: login fail, msg_Act: login fail, StatusCode: 401, TestResult: OK, FailHint: {
+  "code": "401", 
+  "message": "login fail"
+}
+2021-03-01 20:12:18.140 [INFO ] com.hupofire.handler.LoginApi_Handler - ==================================================================
+2021-03-01 20:12:18.451 [INFO ] com.hupofire.handler.LoginApi_Handler - CaseID: null, CaseName: 使用正确的账号，错误的密码，无法正常登录成功，且接口返回的实际结果都正确, msg_Exp: login fail, msg_Act: login fail, StatusCode: 401, TestResult: OK, FailHint: {
+  "code": "401", 
+  "message": "login fail"
+}
+2021-03-01 20:12:18.451 [INFO ] com.hupofire.handler.LoginApi_Handler - ==================================================================
+2021-03-01 20:12:18.808 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: 正常登录，访问浏览接口且无参, msg_Exp: , msg_Act: {
+  "breakfast": [
+    {
+      "menu_name": "Steamed Dumplings", 
+      "menu_nunber": "01", 
+      "menu_price": 5.5
+    }, 
+    {
+      "menu_name": "mixed congee", 
+      "menu_nunber": "02", 
+      "menu_price": 3.0
+    }, 
+    {
+      "menu_name": "Deep-Fried Dough Sticks", 
+      "menu_nunber": "03", 
+      "menu_price": 1.5
+    }, 
+    {
+      "menu_name": "Tea egg", 
+      "menu_nunber": "04", 
+      "menu_price": 1.0
+    }, 
+    {
+      "menu_name": "Doubao", 
+      "menu_nunber": "05", 
+      "menu_price": 1.5
+    }, 
+    {
+      "menu_name": "Clay oven rolls", 
+      "menu_nunber": "06", 
+      "menu_price": 2.0
+    }
+  ], 
+  "code": "200", 
+  "dinner": [
+    {
+      "menu_name": "Stir fried pork with chili", 
+      "menu_nunber": "13", 
+      "menu_price": 21.0
+    }, 
+    {
+      "menu_name": "Sliced pork soup with peas", 
+      "menu_nunber": "14", 
+      "menu_price": 15.0
+    }, 
+    {
+      "menu_name": "Original pork rolls", 
+      "menu_nunber": "15", 
+      "menu_price": 26.0
+    }, 
+    {
+      "menu_name": "Sour cabbage", 
+      "menu_nunber": "16", 
+      "menu_price": 20.0
+    }, 
+    {
+      "menu_name": "Sauteed Potato, Green Pepper and Eggplant", 
+      "menu_nunber": "17", 
+      "menu_price": 25.5
+    }, 
+    {
+      "menu_name": "Spareribs with brown sauce", 
+      "menu_nunber": "18", 
+      "menu_price": 39.0
+    }
+  ], 
+  "lunch": [
+    {
+      "menu_name": "Kung Pao Chicken", 
+      "menu_nunber": "07", 
+      "menu_price": 17.0
+    }, 
+    {
+      "menu_name": "double cooked pork slices", 
+      "menu_nunber": "08", 
+      "menu_price": 25.0
+    }, 
+    {
+      "menu_name": "Sweet and Sour Spare Ribs", 
+      "menu_nunber": "09", 
+      "menu_price": 35.0
+    }, 
+    {
+      "menu_name": "Fried pork slices with garlic", 
+      "menu_nunber": "10", 
+      "menu_price": 30.0
+    }, 
+    {
+      "menu_name": "sour and spicy shredded potatoes", 
+      "menu_nunber": "11", 
+      "menu_price": 25.5
+    }, 
+    {
+      "menu_name": "Braised eggplant", 
+      "menu_nunber": "12", 
+      "menu_price": 32.0
+    }
+  ]
+}, StatusCode: 400, TestResult: OK, FailHint: 【msg_Exp】和【msg_Act】不一致
+2021-03-01 20:12:18.808 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================
+2021-03-01 20:12:19.157 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: 正常登录，访问浏览接口且有参type，type合法, msg_Exp: , msg_Act: [
+  {
+    "menu_name": "Stir fried pork with chili", 
+    "menu_nunber": "13", 
+    "menu_price": 21.0
+  }, 
+  {
+    "menu_name": "Sliced pork soup with peas", 
+    "menu_nunber": "14", 
+    "menu_price": 15.0
+  }, 
+  {
+    "menu_name": "Original pork rolls", 
+    "menu_nunber": "15", 
+    "menu_price": 26.0
+  }, 
+  {
+    "menu_name": "Sour cabbage", 
+    "menu_nunber": "16", 
+    "menu_price": 20.0
+  }, 
+  {
+    "menu_name": "Sauteed Potato, Green Pepper and Eggplant", 
+    "menu_nunber": "17", 
+    "menu_price": 25.5
+  }, 
+  {
+    "menu_name": "Spareribs with brown sauce", 
+    "menu_nunber": "18", 
+    "menu_price": 39.0
+  }
+], StatusCode: 400, TestResult: OK, FailHint: 【msg_Exp】和【msg_Act】不一致
+2021-03-01 20:12:19.157 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================
+2021-03-01 20:12:19.509 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: 正常登录，访问浏览接口且有参type，type非法, msg_Exp: , msg_Act: null, StatusCode: 400, TestResult: OK, FailHint: 【msg_Exp】和【msg_Act】不一致
+2021-03-01 20:12:19.509 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================
+2021-03-01 20:12:19.852 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: 正常登录，访问浏览接口且无参, msg_Exp: , msg_Act: {
+  "breakfast": [
+    {
+      "menu_name": "Steamed Dumplings", 
+      "menu_nunber": "01", 
+      "menu_price": 5.5
+    }, 
+    {
+      "menu_name": "mixed congee", 
+      "menu_nunber": "02", 
+      "menu_price": 3.0
+    }, 
+    {
+      "menu_name": "Deep-Fried Dough Sticks", 
+      "menu_nunber": "03", 
+      "menu_price": 1.5
+    }, 
+    {
+      "menu_name": "Tea egg", 
+      "menu_nunber": "04", 
+      "menu_price": 1.0
+    }, 
+    {
+      "menu_name": "Doubao", 
+      "menu_nunber": "05", 
+      "menu_price": 1.5
+    }, 
+    {
+      "menu_name": "Clay oven rolls", 
+      "menu_nunber": "06", 
+      "menu_price": 2.0
+    }
+  ], 
+  "code": "200", 
+  "dinner": [
+    {
+      "menu_name": "Stir fried pork with chili", 
+      "menu_nunber": "13", 
+      "menu_price": 21.0
+    }, 
+    {
+      "menu_name": "Sliced pork soup with peas", 
+      "menu_nunber": "14", 
+      "menu_price": 15.0
+    }, 
+    {
+      "menu_name": "Original pork rolls", 
+      "menu_nunber": "15", 
+      "menu_price": 26.0
+    }, 
+    {
+      "menu_name": "Sour cabbage", 
+      "menu_nunber": "16", 
+      "menu_price": 20.0
+    }, 
+    {
+      "menu_name": "Sauteed Potato, Green Pepper and Eggplant", 
+      "menu_nunber": "17", 
+      "menu_price": 25.5
+    }, 
+    {
+      "menu_name": "Spareribs with brown sauce", 
+      "menu_nunber": "18", 
+      "menu_price": 39.0
+    }
+  ], 
+  "lunch": [
+    {
+      "menu_name": "Kung Pao Chicken", 
+      "menu_nunber": "07", 
+      "menu_price": 17.0
+    }, 
+    {
+      "menu_name": "double cooked pork slices", 
+      "menu_nunber": "08", 
+      "menu_price": 25.0
+    }, 
+    {
+      "menu_name": "Sweet and Sour Spare Ribs", 
+      "menu_nunber": "09", 
+      "menu_price": 35.0
+    }, 
+    {
+      "menu_name": "Fried pork slices with garlic", 
+      "menu_nunber": "10", 
+      "menu_price": 30.0
+    }, 
+    {
+      "menu_name": "sour and spicy shredded potatoes", 
+      "menu_nunber": "11", 
+      "menu_price": 25.5
+    }, 
+    {
+      "menu_name": "Braised eggplant", 
+      "menu_nunber": "12", 
+      "menu_price": 32.0
+    }
+  ]
+}, StatusCode: 400, TestResult: OK, FailHint: 【msg_Exp】和【msg_Act】不一致
+2021-03-01 20:12:19.852 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================
+2021-03-01 20:12:20.202 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: 正常登录，访问浏览接口且有参type，type合法, msg_Exp: , msg_Act: [
+  {
+    "menu_name": "Stir fried pork with chili", 
+    "menu_nunber": "13", 
+    "menu_price": 21.0
+  }, 
+  {
+    "menu_name": "Sliced pork soup with peas", 
+    "menu_nunber": "14", 
+    "menu_price": 15.0
+  }, 
+  {
+    "menu_name": "Original pork rolls", 
+    "menu_nunber": "15", 
+    "menu_price": 26.0
+  }, 
+  {
+    "menu_name": "Sour cabbage", 
+    "menu_nunber": "16", 
+    "menu_price": 20.0
+  }, 
+  {
+    "menu_name": "Sauteed Potato, Green Pepper and Eggplant", 
+    "menu_nunber": "17", 
+    "menu_price": 25.5
+  }, 
+  {
+    "menu_name": "Spareribs with brown sauce", 
+    "menu_nunber": "18", 
+    "menu_price": 39.0
+  }
+], StatusCode: 400, TestResult: OK, FailHint: 【msg_Exp】和【msg_Act】不一致
+2021-03-01 20:12:20.202 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================
+2021-03-01 20:12:20.553 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: 正常登录，访问浏览接口且有参type，type非法, msg_Exp: , msg_Act: null, StatusCode: 400, TestResult: OK, FailHint: 【msg_Exp】和【msg_Act】不一致
+2021-03-01 20:12:20.553 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================
+2021-03-01 20:12:20.890 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: 正常登录，访问浏览接口且有参type，type非法, msg_Exp: , msg_Act: null, StatusCode: 400, TestResult: OK, FailHint: 【msg_Exp】和【msg_Act】不一致
+2021-03-01 20:12:20.890 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================
+2021-03-01 20:12:21.237 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: 正常登录，访问浏览接口且有参type，type非法, msg_Exp: , msg_Act: null, StatusCode: 400, TestResult: OK, FailHint: 【msg_Exp】和【msg_Act】不一致
+2021-03-01 20:12:21.237 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================
+2021-03-01 20:12:21.574 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: 未登录，访问浏览接口且无参, msg_Exp: , msg_Act: Unknown user info, please re-login, StatusCode: 401, TestResult: OK, FailHint: {
+  "code": "401", 
+  "message": "Unknown user info, please re-login."
+}
+2021-03-01 20:12:21.574 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================
+2021-03-01 20:12:21.923 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: 未登录，访问浏览接口且有参type，type合法, msg_Exp: , msg_Act: Unknown user info, please re-login, StatusCode: 401, TestResult: OK, FailHint: {
+  "code": "401", 
+  "message": "Unknown user info, please re-login."
+}
+2021-03-01 20:12:21.923 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================
+2021-03-01 20:12:22.268 [INFO ] com.hupofire.handler.MenuListApi_Handler - CaseID: null, CaseName: access_token失效，访问浏览接口且有参type，type合法, msg_Exp: , msg_Act: Unknown user info, please re-login, StatusCode: 401, TestResult: OK, FailHint: {
+  "code": "401", 
+  "message": "Unknown user info, please re-login."
+}
+2021-03-01 20:12:22.268 [INFO ] com.hupofire.handler.MenuListApi_Handler - ==================================================================

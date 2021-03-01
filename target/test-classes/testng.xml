@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebUI Test Suite" parallel="tests" thread-count="1">
+    <!--&lt;!&ndash; 配置文件路径 &ndash;&gt;
+    <parameter name="propertiesPath" value="src/test/resources/config/config.properties"/>
+
+    &lt;!&ndash; jenkins 传参示例 &ndash;&gt;
+    <parameter name="param1" value="${param1}"/>
+    <parameter name="param2" value="${param2}"/>
+
+    &lt;!&ndash; pc/h5 的选择示例 &ndash;&gt;
+    &lt;!&ndash; 如果终端选择 pc 端配置示例 &ndash;&gt;
+    <parameter name="terminal" value="pc"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="deviceName" value="desktop"/>-->
+    <!-- 如果终端选择 h5 端配置示例 -->
+    <!--<parameter name="terminal" value="h5"/>-->
+    <!--<parameter name="browserName" value="chrome"/>-->
+    <!--<parameter name="deviceName" value="Nexus 5"/>-->
+
+    <!-- 若运行远端，则使用 hub 参数配置示例 -->
+    <!--<parameter name="remoteIP" value="127.0.0.1"/>-->
+    <!--<parameter name="remotePort" value="4444"/>-->
+    <!--<parameter name="browserVersion" value="79.0.3945.130"/>-->
+
+    <!-- 测试套件 -->
+    <suite-files>
+
+        <!-- test -->
+        <suite-file path="Derrick.xml"/>
+    </suite-files>
+
+    <!-- 监听器 -->
+    <listeners>
+        <!-- 优先级监听器
+        <listener class-name="com.abcnull.listener.RePrioritizingListener"/>
+        &lt;!&ndash; 测试日志监听器 &ndash;&gt;
+        <listener class-name="com.abcnull.listener.TestLogListener"/>
+        &lt;!&ndash; BeautifulReport 测试报告监听器 &ndash;&gt;
+        <listener class-name="com.abcnull.listener.TestReportListener"/>-->
+        <!-- 定制化测试报告监听器 -->
+        <listener class-name="com.hupofire.service.ExtentReportGenerateService"/>
+    </listeners>
+</suite>

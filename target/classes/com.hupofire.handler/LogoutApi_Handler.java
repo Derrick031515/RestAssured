@@ -1,6 +1,7 @@
 package com.hupofire.handler;
 
-import com.hupofire.controller.LoginApi_Controller;
+import com.hupofire.controller.LogoutApi_Controller;
+import com.hupofire.controller.MenuListApi_Controller;
 import com.hupofire.util.DecodeUnicodeUtil;
 import com.hupofire.util.ExcelUtil;
 import com.hupofire.util.MobileApiToolsUtil;
@@ -12,20 +13,23 @@ import org.testng.Reporter;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @description;
  * @Author：Derrick
  * @Date：2021/2/28 12:25 下午
  */
-public class LoginApi_Handler {
-    private static Logger logger = Logger.getLogger(LoginApi_Handler.class);
+public class LogoutApi_Handler {
+    private static Logger logger = Logger.getLogger(LogoutApi_Handler.class);
     //接口用例标题所在行
     static int TITILE_LINE_INDEX= 5;
     //接口所需参数的个数
-    static int ArgName_Number = 2;
+    static int ArgName_Number = 1;
     //接口需要校验参数个数
-    static int Act_Number = 2;
+    static int Act_Number = 1;
 
     //接口参数
     static String Param = null;
@@ -36,7 +40,7 @@ public class LoginApi_Handler {
      */
     public static void GetExcelInstance(){
         ExcelUtil.getInstance().setFilePath("src/test/resources/Hupofire.Api.xlsm");
-        ExcelUtil.getInstance().setSheetName("Login");
+        ExcelUtil.getInstance().setSheetName("Logout");
     }
 
     public static void InitializeExcelData(){
@@ -52,7 +56,7 @@ public class LoginApi_Handler {
                     System.out.println("正在初始化："+ExcelUtil.getInstance().readExcelCell(TITILE_LINE_INDEX,3+ArgName_Number+Act_Number+i)+"列");
                 }
             }else if(Act_Number == 1){
-                for(int i=1;i<Act_Number+6;i++){
+                for(int i=1;i<Act_Number+5;i++){
                     MobileApiToolsUtil.initializeData(TITILE_LINE_INDEX,""+ExcelUtil.getInstance().readExcelCell(TITILE_LINE_INDEX,3+ArgName_Number+i)+"","",color);
                     System.out.println("正在初始化："+ExcelUtil.getInstance().readExcelCell(TITILE_LINE_INDEX,3+ArgName_Number+Act_Number+i)+"列");
                 }
@@ -81,9 +85,9 @@ public class LoginApi_Handler {
     }
 
     /**
-     * <br>根据用例ID，执行Login相关接口请求，获取Json信息，并写入结果到Excel</br>
+     * <br>根据用例ID，执行Menu相关接口请求，获取Json信息，并写入结果到Excel</br>
      */
-    public static String Login(int ID) throws Exception {
+    public static String LogoutList(int id,String access_token,String msg_Exp) throws Exception {
         GetExcelInstance();
         boolean ArgName = false;
         List<Map<String, String>> data = null;
@@ -93,7 +97,7 @@ public class LoginApi_Handler {
         String Method = ExcelUtil.getInstance().readExcelCell(3, 2);
         ArgName = MobileApiToolsUtil.isArgEquals(4, 2, TITILE_LINE_INDEX);
 
-        if (ApiUrl.equals("") || Act.equals("") || Method.equals("") || !ArgName) {
+        if (ApiUrl.equals("") || Act.equals("") || Method.equals("")) {
             logger.error("请检查 Excel 中 ApiUrl、Act、Method、ArgName 是否设置正确...");
             System.out.println("请检查 Excel 中 ApiUrl、Act、Method、ArgName 是否设置正确...");
             System.exit(-1);
@@ -102,25 +106,21 @@ public class LoginApi_Handler {
         data = ExcelUtil.getInstance().readExcelAllData(TITILE_LINE_INDEX);
 
         if (data != null) {
-            int i = ID;
+            int i = id;
             //根据Excel列名称,获取单元格内容
             Map<String, String> map = data.get(i-1);//从第一个用例开始，0代表就是第一个
+            Set<Map.Entry<String, String>> entries = map.entrySet();
             String CaseID = map.get("CaseID");
             String CaseName = map.get("CaseName");
-            String username = map.get("username");
-            String password = map.get("password");
+            String type = map.get("type");
 
             //写入Run列, 执行纪录，Y代表已执行
             MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "Run", "Y");
 
-            //指定请求的Api地址
-            Param = "{\"authRequest\":{\"userName\":\"" + username + "\",\"password\": \"" + password + "\"}}";
-
-            //请求接口，获取LoginInfo数组
-            Object[] LoginInfo = LoginApi_Controller.GetAccessToken(ID,ApiUrl,Param);
-
-            //从LoginInfo数组中，读取StatusCode并写入
-            code = (String) LoginInfo[1];
+            //请求接口，ListInfo数组
+            Object[] LogoutInfo = LogoutApi_Controller.GetLogoutInfo(id, access_token, ApiUrl);
+            //从MenuInfo数组中，读取StatusCode并写入
+            code = (String) LogoutInfo[1];
             MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "StatusCode",code);
 
             //判断StatusCode结果是否等于200，成立则TestResult写入OK并设置单元格颜色为绿色，反则写入NG并设置单元格颜色为红色，并写入失败消息提示
@@ -128,25 +128,25 @@ public class LoginApi_Handler {
                 ExcelUtil.getInstance().setCellBackgroundColor(TITILE_LINE_INDEX, "StatusCode",TITILE_LINE_INDEX + i, 1);
                 MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "TestResult", "OK");
                 ExcelUtil.getInstance().setCellBackgroundColor(TITILE_LINE_INDEX, "TestResult",TITILE_LINE_INDEX + i, 1);
-                //从LoginInfo数组中，读取msg_Act结果并写入
-                msg_Act = (String) LoginInfo[2];
+                //从menuListInfo数组中，读取msg_Act结果并写入
+                msg_Act = (String) LogoutInfo[2];
                 MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "msg_Act", msg_Act);
             }else if ("401".equals(code)){
                 ExcelUtil.getInstance().setCellBackgroundColor(TITILE_LINE_INDEX, "StatusCode",TITILE_LINE_INDEX + i, 0);
                 MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "TestResult", "NG");
                 ExcelUtil.getInstance().setCellBackgroundColor(TITILE_LINE_INDEX, "TestResult",TITILE_LINE_INDEX + i, 0);
-                //从LoginInfo数组中，读取message消息结果并写入
-                String message = (String) LoginInfo[0];
+                //从menuListInfo数组中，读取message消息结果并写入
+                String message = (String) LogoutInfo[0];
                 String NewMessage= DecodeUnicodeUtil.decodeUnicode(message);
                 MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "FailHint", NewMessage);
-                msg_Act = (String) LoginInfo[2];
+                msg_Act = (String) LogoutInfo[2];
                 MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "msg_Act", msg_Act);
             }else{
                 ExcelUtil.getInstance().setCellBackgroundColor(TITILE_LINE_INDEX, "StatusCode",TITILE_LINE_INDEX + i, 0);
                 MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "TestResult", "NG");
                 ExcelUtil.getInstance().setCellBackgroundColor(TITILE_LINE_INDEX, "TestResult",TITILE_LINE_INDEX + i, 0);
-                //从LoginInfo数组中，读取message消息结果并写入
-                msg_Act = (String) LoginInfo[2];
+                //从menuListInfo数组中，读取message消息结果并写入
+                msg_Act = (String) LogoutInfo[2];
                 MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "msg_Act", msg_Act);
             }
 
@@ -154,19 +154,17 @@ public class LoginApi_Handler {
             MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "RunningTime", MobileApiToolsUtil.getDate());
 
             //从LoginInfo数组中，读取JSON结果并编码转换后写入
-            String Json = (String) LoginInfo[0];
+            String Json = (String) LogoutInfo[0];
             String NewJson=DecodeUnicodeUtil.decodeUnicode(Json);
             MobileApiToolsUtil.writeResult(TITILE_LINE_INDEX, TITILE_LINE_INDEX + i, "Json", NewJson);
 
-            if("login success".equals(msg_Act)){
-
+            if("logout success".equals(msg_Act)){
                 Reporter.log("用例ID: "+ CaseID);
                 Reporter.log("用例名称: "+ CaseName);
                 Reporter.log("请求地址: "+ ApiUrl);
                 Reporter.log("请求方式: "+ Method);
                 Reporter.log("请求参数: "+ Param);
                 Reporter.log("返回结果: "+ NewJson);
-
             }else{
                 Reporter.log("用例ID: "+ CaseID);
                 Reporter.log("用例名称: "+ CaseName);
@@ -175,57 +173,21 @@ public class LoginApi_Handler {
                 Reporter.log("请求参数: "+ Param);
                 Reporter.log("返回结果: "+ NewJson);
 
-                String msg_Exp = map.get("msg_Exp");
-                checkEquals(msg_Exp,msg_Act,"msg_Exp","msg_Act",ID);
+                checkEquals(msg_Exp,msg_Act,"msg_Exp","msg_Act",id);
             }
+
+            /*Pattern p = Pattern.compile("\\s*|\t|\r|\n");
+            Matcher m = p.matcher(msg_Act);
+            msg_Act = m.replaceAll("");
+
+            Matcher m_msg_Exp = p.matcher(msg_Exp);
+            msg_Exp = m_msg_Exp.replaceAll("");*/
+
+//            checkEquals(msg_Exp,msg_Act.trim(),"msg_Exp","msg_Act",id);
+
         }
 
         return code;
-    }
-
-    /**
-     * 登录获取access_token
-     * @param ID
-     * @return
-     * @throws Exception
-     */
-    public static String LoginToAccessToken(int ID) throws Exception {
-        GetExcelInstance();
-        boolean ArgName = false;
-        List<Map<String, String>> data = null;
-        String code = null;
-        String access_token = "";
-
-        String ApiUrl = ExcelUtil.getInstance().readExcelCell(1, 2);
-        String Act = ExcelUtil.getInstance().readExcelCell(2, 2);
-        String Method = ExcelUtil.getInstance().readExcelCell(3, 2);
-        ArgName = MobileApiToolsUtil.isArgEquals(4, 2, TITILE_LINE_INDEX);
-
-        if (ApiUrl.equals("") || Act.equals("") || Method.equals("") || !ArgName) {
-            logger.error("请检查 Excel 中 ApiUrl、Act、Method、ArgName 是否设置正确...");
-            System.out.println("请检查 Excel 中 ApiUrl、Act、Method、ArgName 是否设置正确...");
-            System.exit(-1);
-        }
-
-        data = ExcelUtil.getInstance().readExcelAllData(TITILE_LINE_INDEX);
-
-        if (data != null) {
-            int i = ID;
-            //根据Excel列名称,获取单元格内容
-            Map<String, String> map = data.get(i - 1);//从第一个用例开始，0代表就是第一个
-            String CaseID = map.get("CaseID");
-            String CaseName = map.get("CaseName");
-            String username = map.get("username");
-            String password = map.get("password");
-
-            //指定请求的Api地址
-            Param = "{\"authRequest\":{\"userName\":\"" + username + "\",\"password\": \"" + password + "\"}}";
-
-            //请求接口，获取LoginInfo数组
-            access_token = LoginApi_Controller.GetAccessTokenInfo(ApiUrl, Param);
-
-        }
-            return access_token;
     }
 
     /**
